@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="cn.edu.zjut.pojo.Admin" table="item" catalog="mydb">
+		<composite-id name="ipk" class="cn.edu.zjut.po.ItemPK">
+			<key-property name="itemID" column="ISBN" />
+			<key-property name="title" column="title" />
+		</composite-id>
+		<property name="description" type="string">
+			<column name="description" length="20" />
+		</property>
+		<property name="cost" type="float">
+			<column name="cost" />
+		</property>
+	</class>
+
+</hibernate-mapping>

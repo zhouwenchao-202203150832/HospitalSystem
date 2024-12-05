@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="cn.edu.zjut.pojo.User" table="user" catalog="hospitaldb">
+		<id name="username" type="string">
+			<column name="username" />
+			<generator class="assigned" />
+		</id>
+		<property name="password" type="string">
+			<column name="password" length="20" />
+		</property>
+		<property name="role" type="string">
+			<column name="role" />
+		</property>
+	</class>
+
+</hibernate-mapping>
